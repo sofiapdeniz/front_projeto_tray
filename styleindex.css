@@ -84,7 +84,7 @@ header {
 
 .popular-topics {
     position: absolute;
-    bottom: 200px; /* Distância do fundo da hero */
+    bottom: 200px; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
@@ -103,29 +103,29 @@ header {
     margin: 0 10px;
     color: #ffffff;
     cursor: pointer;
-    transition: color 0.3s ease; /* Suaviza a mudança de cor */
+    transition: color 0.3s ease; 
 }
 
 .popular-topics li:hover {
-    color: #00b4d8; /* Azul claro ao passar o mouse */
+    color: #00b4d8; 
 }
 
 .categories {
     display: flex;
     justify-content: space-around;
     padding: 40px 20px;
-    background-color: transparent; /* Removido o fundo branco */
+    background-color: transparent;
     flex-wrap: wrap;
 }
 
 .card {
-    background: none; /* Sem fundo branco */
-    padding: 0; /* Sem padding que cria a borda falsa */
+    background: none; 
+    padding: 0; 
     border-radius: 15px;
     text-align: center;
     width: 22%;
     transition: transform 0.3s ease;
-    box-shadow: none; /* Remove sombra, se quiser mais clean */
+    box-shadow: none; 
 }
 
 .card:hover {
@@ -136,14 +136,14 @@ header {
     width: 80%;
     height: 190px;
     object-fit: cover;
-    border-radius: 20px; /* Borda arredondada só na imagem */
+    border-radius: 20px; 
     margin-bottom: 10px;
 }
 
 .card h3 {
     margin: 10px 0 5px;
     font-size: 18px;
-    color: white; /* Alinha com o fundo escuro */
+    color: white; 
 }
 
 .card p {
@@ -169,7 +169,7 @@ header {
 }
 
 .carousel::-webkit-scrollbar {
-    display: none; /* Esconde a barra de rolagem */
+    display: none; 
 }
 
 .carousel-item {
