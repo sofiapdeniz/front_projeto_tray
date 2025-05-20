@@ -42,7 +42,7 @@ header {
     left: 0;
     width: 100%;
     height: 40%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(2, 0, 24) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(2, 0, 24) 100%);
     z-index: 1;
 }
 
@@ -60,7 +60,7 @@ header {
 .search-container {
     display: flex;
     align-items: center;
-    background-color: white;
+    background-color: rgb(15, 15, 15);
     padding: 15px 20px;
     border-radius: 30px;
     width: 60%;
@@ -113,8 +113,9 @@ header {
 .categories {
     display: flex;
     justify-content: space-around;
-    padding: 40px 20px;
-    background-color: transparent;
+    padding: 40px 20px 100px;
+    background-color: white;
+    color: rgb(4, 1, 41);
     flex-wrap: wrap;
 }
 
@@ -123,7 +124,7 @@ header {
     padding: 0; 
     border-radius: 15px;
     text-align: center;
-    width: 22%;
+    width: 18%;
     transition: transform 0.3s ease;
     box-shadow: none; 
 }
@@ -133,22 +134,22 @@ header {
 }
 
 .card img {
-    width: 80%;
-    height: 190px;
+    width: 90%;
+    height: 160px;
     object-fit: cover;
     border-radius: 20px; 
     margin-bottom: 10px;
 }
 
 .card h3 {
-    margin: 10px 0 5px;
-    font-size: 18px;
-    color: white; 
+    margin: -10px 0 -10px;
+    font-size: 25px;
+    color: rgb(18, 0, 61); 
 }
 
 .card p {
-    font-size: 14px;
-    color: #aaa;
+    font-size: px;
+    color: #130022;
 }
 
 .banner {
@@ -158,6 +159,13 @@ header {
     margin: 20px;
     color: white;
     font-weight: bold;
+}
+
+.banner img {
+    border-radius: 20px;
+    max-width: 90%;
+    height: auto;
+    box-shadow: 5 4px 12px rgba (0, 0, 0, 0.1);
 }
 
 .carousel {
