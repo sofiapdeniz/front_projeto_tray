@@ -41,7 +41,7 @@ header {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 40%;
+    height: 70%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgb(2, 0, 24) 100%);
     z-index: 1;
 }
@@ -58,27 +58,31 @@ header {
 }
 
 .search-container {
-    display: flex;
-    align-items: center;
-    background-color: rgb(15, 15, 15);
-    padding: 15px 20px;
-    border-radius: 30px;
+    position: relative; 
+    background-color: rgb(255, 255, 255);
+    padding: 15px 20px 15px 60px; 
+    border-radius: 40px;
     width: 60%;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .search-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    filter: grayscale(100%) brightness(60%);
 }
 
 .search-container input {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Poppins', Arial, sans-serif;
     background: transparent;
 }
 
@@ -125,7 +129,7 @@ header {
     border-radius: 15px;
     text-align: center;
     width: 18%;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     box-shadow: none; 
 }
 
@@ -143,20 +147,20 @@ header {
 
 .card h3 {
     margin: -10px 0 -10px;
-    font-size: 25px;
+    font-size: 30px;
     color: rgb(18, 0, 61); 
 }
 
 .card p {
-    font-size: px;
+    font-size: 18px;
     color: #130022;
 }
 
 .banner {
-    background-color: #0077b6;
+    background-color: #4ec0fd;
     text-align: center;
-    padding: 15px;
-    margin: 20px;
+    padding: 30px;
+    margin: 0px;
     color: white;
     font-weight: bold;
 }
@@ -168,45 +172,115 @@ header {
     box-shadow: 5 4px 12px rgba (0, 0, 0, 0.1);
 }
 
+.carousel-section {
+    background-color: rgb(24, 0, 51);
+    padding: 20px 20px 40px;
+}
+
+.carousel-title {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 0px;
+}
+
 .carousel {
     display: flex;
     overflow-x: auto;
     gap: 20px;
-    padding: 20px;
+    padding: 40px 20px;
+    background-color: rgb(24, 0, 51);
     scroll-behavior: smooth;
+    margin: 0 auto;
 }
 
+
 .carousel::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 .carousel-item {
     flex: 0 0 auto;
-    width: 220px;
-    text-align: center;
-    background-color: #1a1e2d;
-    border-radius: 12px;
+    height: 350px;
+    width: 280px;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     text-decoration: none;
-    color: white;
-    padding: 15px;
     transition: transform 0.3s ease;
+    padding: 0;
+    position: relative;
 }
 
 .carousel-item:hover {
-    transform: scale(1.05);
+    transform: translateY(-6px);
 }
 
 .carousel-item img {
     width: 100%;
-    height: 280px;
-    object-fit: contain;
-    border-radius: 8px;
-    margin-bottom: 10px;
+    height: 85%;
+    object-fit: cover;
+    display: block;
 }
 
 .carousel-item span {
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 12px 10px;
+    background: linear-gradient(to right, #180033, #4ec0fd);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.arrow {
+    background-color: transparent;
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.arrow:hover {
+    transform: scale(1.15);
+    background-color: #009ac4;
+}
+
+
+.arrow.left {
+    position: absolute;
+    left: -10px;
+    transform: none;
+}
+
+.arrow.right {
+    position: absolute;
+    right: -10px;
+    transform: none;
+}
+.footer-space {
+    height: 300px;
+    background-color: #ffffff;  
+}

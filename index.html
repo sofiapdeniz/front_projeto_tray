@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eTrayning</title>
     <link rel="stylesheet" href="styleindex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
 </head>
+<script src="script.js"></script>
 <body>
+    
     <header>
         <div class="logo">
             <img src="logo.png" alt="Logo eTrayning">
@@ -20,14 +23,15 @@
         <div class="gradient-overlay"></div>
         <div class="search-bar">
             <div class="search-container">
-                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" class="search-icon" alt="Ícone de lupa">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg" class="search-icon" alt="Ícone de lupa">
                 <input type="text" placeholder="Qual a sua dúvida?">
             </div>
         </div>
     </section>    
-</body>
+
     <nav class="popular-topics">
         <ul>
+            <li>Assuntos Populares:</li>
             <li>Tray Envios</li>
             <li>SEO</li>
             <li>Dropshipping</li>
@@ -61,32 +65,37 @@
     </section>
 
     <section class="banner">
-        <img src="calendario_ecommerce.png">
+        <img src="calendario_ecommerce.png" alt="Calendário eCommerce">
     </section>
     
-        <h2>ARTIGOS MAIS PESQUISADOS SOBRE MARKETPLACE</h2>
-            <div class="carousel">
+    <section class="carousel-section">
+        <h2 class="carousel-title">ARTIGOS MAIS PESQUISADOS SOBRE MARKETPLACE</h2>
 
+        <div class="carousel-wrapper">
+            <button class="arrow left" onclick="scrollCarousel(-1)"><</button>
+
+            <div class="carousel" id="carousel">
                 <a href="#" class="carousel-item">
                     <img src="imagens/kabum.png" alt="Kabum!">
-                    <span>Kabum!</span>
+                    <span>Como relacionar categorias com a Kabum</span>
                 </a>
-
                 <a href="#" class="carousel-item">
                     <img src="imagens/magalu.png" alt="Magalu">
-                    <span>Magalu</span>
+                    <span>Como atualizar o estado de pedido na Magalu</span>
                 </a>
-
                 <a href="#" class="carousel-item">
                     <img src="imagens/netshoes.png" alt="Netshoes">
-                    <span>Netshoes</span>
+                    <span>Como incluir anúncios na Netshoes Marketplace</span>
                 </a>
-
                 <a href="#" class="carousel-item">
                     <img src="imagens/shopee.webp" alt="Shopee">
-                    <span>Shopee</span>
+                    <span>Como configurar a emissão automática de NF-e na Shopee</span>
                 </a>
+            </div>
+
+            <button class="arrow right" onclick="scrollCarousel(1)">></button>
         </div>
-        </center>
     </section>
-</html>
+        <div class="footer-space"></div>
+        </body>
+ 
